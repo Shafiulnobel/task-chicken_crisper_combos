@@ -1,20 +1,20 @@
 var catalog = [
     {
         name: "Chicken",
-        desc: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
+        desc: "Chicken Fajitas served with rice and beans, tortillas, guacamole ,salsa and sour cream",
         price: 150,
         image: "https://i.ibb.co/rbzRrBS/brooke-lark-j-UPOXXRNdc-A-unsplash.jpg"
     },
     {
         name: "Fijtaj",
-        desc: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
+        desc: "Chicken Fajitas served with rice and beans, tortillas, guacamole ,salsa and sour cream",
         price: 145,
         image: "https://i.ibb.co/ZzMrL07/davide-cantelli-jpkfc5-d-DI-unsplash.jpg"
     },
 
     {
         name: "Chicken Masala",
-        desc: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
+        desc: "Chicken Fajitas served with rice and beans, tortillas, guacamole ,salsa and sour cream",
         price: 250,
         image: "https://i.ibb.co/3SGrpdJ/emy-Xo-Byi-Bym-X20-unsplash.jpg"
     }
