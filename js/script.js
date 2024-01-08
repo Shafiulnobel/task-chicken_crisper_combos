@@ -2,20 +2,20 @@ var catalog = [
     {
         name: "Chicken",
         desc: "Chicken Fajitas served with rice and beans, tortillas, guacamole ,salsa and sour cream",
-        price: 150,
+        price: 69,
         image: "https://i.ibb.co/rbzRrBS/brooke-lark-j-UPOXXRNdc-A-unsplash.jpg"
     },
     {
         name: "Fijtaj",
         desc: "Chicken Fajitas served with rice and beans, tortillas, guacamole ,salsa and sour cream",
-        price: 145,
+        price: 169,
         image: "https://i.ibb.co/ZzMrL07/davide-cantelli-jpkfc5-d-DI-unsplash.jpg"
     },
 
     {
         name: "Chicken Masala",
         desc: "Chicken Fajitas served with rice and beans, tortillas, guacamole ,salsa and sour cream",
-        price: 250,
+        price: 269,
         image: "https://i.ibb.co/3SGrpdJ/emy-Xo-Byi-Bym-X20-unsplash.jpg"
     }
 ];
@@ -41,12 +41,12 @@ const showCart = () => {
         <div id="child${uniqueId}" class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="${item.image}" class="img-fluid rounded-start" alt="${item.name}">
+                    <img src="${item.image}" class="img-fluid rounded-start h-100"   alt="${item.name}">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
-                        <p class="card-text"><span class="text-body-secondary" id="price${uniqueId}">${item.price}</span>$/each</p>
+                        <p class="card-text"><span class="text-body-secondary" >${item.price}</span>$/each</p>
                         <div class="input-group w-75">
                         <span class="input-group-btn">
                             <button type="button" class="quantity-left-minus btn btn-secondary btn-number" id="minus" data-type="minus" data-field="${uniqueId}">
@@ -60,6 +60,7 @@ const showCart = () => {
                             </button>
                         </span>
                     </div>
+                    <p class="card-text fw-bold text-end"><span class="text-body-secondary" id="price${uniqueId}">${item.price}</span>$</p>
                         <button class="btn position-absolute top-0 start-10 end-0" id="remove"><i class="fa-solid fa-trash text-danger"></i></button>
                     </div>
                 </div>
@@ -132,7 +133,7 @@ const updateCartTotal = () => {
         cartFooter.setAttribute("id", "cart-footer");
         document.getElementById('cart-body').appendChild(cartFooter);
     }
-    cartFooter.innerHTML = `<h5 class="text-warning">Place Order ${totalPrice} $</h5>`;
+    cartFooter.innerHTML = `<h5 class="text-white">Place Order ${totalPrice} $</h5>`;
 }
 const updateCartLength = () => {
     cartLengthElement.textContent = cart.length.toString();
